@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build servlet project",
+      "type": "shell",
+      "command": "javac",
+      "args": [
+        "-encoding",
+        "UTF-8",
+        "-cp",
+        ".;D:/Desktop/TTCS/apache-tomcat-10.1.52/lib/*;webapp/WEB-INF/lib/*",
+        "-d",
+        "webapp/WEB-INF/classes",
+        "src/controller/*.java",
+        "src/service/*.java",
+        "src/dao/*.java",
+        "src/model/*.java",
+        "src/util/*.java"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
